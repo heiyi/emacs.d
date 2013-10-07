@@ -1,4 +1,4 @@
-;;; Basic ruby setup
+;; Basic ruby setup
 (require-package 'ruby-mode)
 
 (add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
@@ -9,20 +9,26 @@
 
 (setq ruby-use-encoding-map nil)
 
-;;; Inferior ruby, run irb in emacs, M-x run ruby
+;; Inferior ruby, run irb in emacs, M-x run ruby
 (require-package 'inf-ruby)
 
-;;; Ruby compilation
+;; Ruby compilation
 (require-package 'ruby-compilation)
+(add-hook 'ruby-mode-hook (lambda () (local-set-key [f7] 'ruby-compilation-this-buffer)))
 
-;;; 若使用rvm安装ruby, emacs识别不了, 需要安装rvm插件
+;; 使用rvm安装ruby, emacs识别不了, 需安装rvm.el
 (require-package 'rvm)
 
-;;; Rails Rinari
+;; Rails Rinari
 (require-package 'rinari)
 (global-rinari-mode)
 
-;;; Php-Mode
+;; Php-Mode
 (require-package 'php-mode)
+
+;; rainbow-mode needs color.el, bundled with Emacs >= 24.
+(require-package 'rainbow-mode)
+(dolist (hook '(css-mode-hook html-mode-hook))
+   (add-hook hook 'rainbow-mode))
 
 (provide 'init-ruby-mode)

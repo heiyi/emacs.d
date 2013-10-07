@@ -1,14 +1,13 @@
-;;----------------------------------------------------------------------------
-;; Navigate window layouts with "C-c <left>" and "C-c <right>"
-;;----------------------------------------------------------------------------
-(winner-mode 1)
-
 ;; Make "C-x o" prompt for a target window when there are more than 2
 (require-package 'switch-window)
 (require 'switch-window)
 (global-set-key (kbd "C-x o") 'switch-window)
-(setq switch-window-shortcut-style 'alphabet)  ;;使用字母模式切换
+(setq switch-window-shortcut-style 'alphabet)
 
+;;----------------------------------------------------------------------------
+;; Navigate window layouts with "C-c <left>" and "C-c <right>"
+;;----------------------------------------------------------------------------
+(winner-mode 1)
 
 ;;----------------------------------------------------------------------------
 ;; When splitting window, show (other-buffer) in the new window
@@ -22,7 +21,6 @@
 
 (global-set-key "\C-x2" (split-window-func-with-other-buffer 'split-window-vertically))
 (global-set-key "\C-x3" (split-window-func-with-other-buffer 'split-window-horizontally))
-
 
 ;;----------------------------------------------------------------------------
 ;; Rearrange split windows

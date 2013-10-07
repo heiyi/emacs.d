@@ -1,4 +1,3 @@
-; @see http://blog.nethazard.net/post-to-wordpress-blogs-with-emacs-org-mode/
 (require-package 'org2blog)
 (require 'org2blog-autoloads)
 
