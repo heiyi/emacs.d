@@ -10,7 +10,7 @@
  case-fold-search t            ;;搜索时小写不敏感，大写敏感
  column-number-mode t          ;;列号
  compilation-scroll-output t   ;;编译结果输出显示
- delete-selection-mode t       ;;Backspace删除选中文字
+ delete-selection-mode t       ;;Backspace删除选中文本
  indent-tabs-mode nil          ;;关闭Tab缩进
  size-indication-mode t        ;;显示文件大小
  show-trailing-whitespace t    ;;显示尾部空格，可以用delete-trailing-space删掉
@@ -87,8 +87,6 @@
 
 ;; 分页符C-x[, C-x]跳转, C-q C-l插入分页符, C-x n w exit narrow
 (put 'narrow-to-region 'disabled nil)    ;;C-x n n
-(put 'narrow-to-page 'disabled nil)      ;;C-x n p
-(put 'narrow-to-defun 'disabled nil)     ;;C-x n d
 ;;----------------------------------------------------------------------------
 ;; 跳转匹配括号  C-M-u
 (defun backward-up-sexp (arg)

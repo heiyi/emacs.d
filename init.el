@@ -3,11 +3,10 @@
 
 ;; Machinery for installing required
 (require 'init-elpa)
-;;----------------------------------------------------------------------------
+
 ;; Load configs for specific features and modes
-;;----------------------------------------------------------------------------
 (require 'init-gui-frames)
-(require 'init-ido)               ;; Smex && Hippie expand
+(require 'init-ido)               ;; Smex && Hippie Expand
 (require 'init-yasnippet)
 (require 'init-windows)           ;; C-c<Left>, C-c<Right>, C-x |, C-x _
 
@@ -16,4 +15,4 @@
 (require 'init-ruby-mode)         ;; RoR && CSS && PHP
 (require 'init-w3m)
 (require 'init-org2blog)
-;;---------------------------------END----------------------------------------
+;;---------------------------------END------------------------------------

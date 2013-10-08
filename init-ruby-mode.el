@@ -23,10 +23,10 @@
 (require-package 'rinari)
 (global-rinari-mode)
 
-;; Php-Mode
+;; PhP-Mode
 (require-package 'php-mode)
 
-;; rainbow-mode needs color.el, bundled with Emacs >= 24.
+;; For Css
 (require-package 'rainbow-mode)
 (dolist (hook '(css-mode-hook html-mode-hook))
    (add-hook hook 'rainbow-mode))
