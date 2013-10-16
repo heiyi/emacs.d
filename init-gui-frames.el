@@ -9,6 +9,9 @@
 (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
   (when (fboundp mode) (funcall mode -1)))
 
+;; Show a marker in the left fringe for lines not in the buffer
+(set-default 'indicate-empty-lines t)
+
 ;; Title
 (setq frame-title-format
       '("^w^  " (:eval (if (buffer-file-name)
