@@ -19,10 +19,6 @@
 ;; 使用rvm安装ruby, emacs识别不了, 需安装rvm.el
 (require-package 'rvm)
 
-;; Rails Rinari
-(require-package 'rinari)
-(global-rinari-mode)
-
 ;; PhP-Mode
 (require-package 'php-mode)
 

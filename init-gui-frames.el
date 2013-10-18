@@ -1,9 +1,8 @@
 ;; Theme
 (load-theme 'wombat 1)
 
-(setq use-file-dialog nil)   ;;不弹出对话框
-(setq use-dialog-box nil)    ;;关闭对话框提示，改用下方minibuffer提示错误信息
-(setq inhibit-startup-screen t)  ;;close startup screen
+;; Close startup screen
+(setq inhibit-startup-screen t)
 
 ;; UI
 (dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))

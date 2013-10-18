@@ -12,7 +12,7 @@
 
 (require 'init-editing-utils)	  ;; C->, C-c C-<,  M-m, C-c j, C-;
 
-(require 'init-ruby-mode)         ;; RoR && CSS && PHP
+(require 'init-ruby-mode)         ;; CSS && PHP
 (require 'init-w3m)
 (require 'init-org2blog)
 ;;---------------------------------END------------------------------------

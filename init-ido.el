@@ -2,7 +2,7 @@
 (ido-mode t)
 (ido-everywhere t)
 
-(setq ido-enable-flex-matching t)
+(setq ido-enable-flex-matching t)  ;; 文件名中任意顺序字母定位文件
 (setq ido-use-filename-at-point nil)
 (setq ido-auto-merge-work-directories-length 0)  ;; 自动搜索文件名
 
