@@ -7,8 +7,6 @@
 (add-to-list 'auto-mode-alist '("\\.ru\\'" . ruby-mode))
 (add-to-list 'auto-mode-alist '("Gemfile\\'" . ruby-mode))
 
-(setq ruby-use-encoding-map nil)
-
 ;; Inferior ruby, run irb in emacs, M-x run ruby
 (require-package 'inf-ruby)
 

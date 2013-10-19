@@ -7,15 +7,12 @@
 (setq-default
  make-backup-files nil
  auto-save-default nil         ;;don't save #file#
- case-fold-search t            ;;搜索时小写不敏感，大写敏感
  column-number-mode t          ;;列号
- compilation-scroll-output t   ;;编译结果输出显示
  delete-selection-mode t       ;;Backspace删除选中文本
  indent-tabs-mode nil          ;;关闭Tab缩进
  size-indication-mode t        ;;显示文件大小
- show-trailing-whitespace t    ;;显示尾部空格，可以用delete-trailing-space删掉
- ediff-split-window-function 'split-window-horizontally  ;;左右两窗口比较文件
- ediff-window-setup-function 'ediff-setup-windows-plain  ;;比较文件时在同一frame打开所有窗口
+ show-trailing-whitespace t    ;;显示尾部空格，可以用delete-trailing-space删除
+ ediff-window-setup-function 'ediff-setup-windows-plain  ;;don't start another frame
  visible-bell t)               ;;关闭响铃
 
 ;; yes or no ---> y or n
@@ -23,9 +20,6 @@
 
 ;; 自动加载外部修改文件
 (global-auto-revert-mode 1)
-
-;; 高亮显示标记内容
-(transient-mark-mode t)
 
 ;; No cursor Blinking
 (blink-cursor-mode 0)
