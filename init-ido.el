@@ -2,9 +2,11 @@
 (ido-mode t)
 (ido-everywhere t)
 
-(setq ido-enable-flex-matching t)  ;; 文件名中任意顺序字母定位文件
-(setq ido-use-filename-at-point nil)
-(setq ido-auto-merge-work-directories-length 0)  ;; 自动搜索文件名
+;; 任意顺序字母快速定位文件
+(setq ido-enable-flex-matching t)
+
+;; 自动搜索文件名
+(setq ido-auto-merge-work-directories-length 0)
 
 ;; Allow the same buffer to be open in different frames
 (setq ido-default-buffer-method 'selected-window)
