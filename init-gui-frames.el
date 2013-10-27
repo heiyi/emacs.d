@@ -17,16 +17,6 @@
                    (abbreviate-file-name (buffer-file-name))
                  "%b"))))
 
-;; English Font
-(set-face-attribute
-'default nil :font "Monaco 11")
-
-;; Chinese Font
-(dolist (charset '(kana han symbol cjk-misc bopomofo))
-  (set-fontset-font (frame-parameter nil 'font)
-                    charset
-                    (font-spec :family "文泉驿微米黑" :size 15)))
-
 ;; Fullscreen--->F11
 (defun fullscreen ()
   (interactive)
