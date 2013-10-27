@@ -10,4 +10,5 @@
          :default-categories ("点滴记录")   ;;默认分类目录
          :tags-as-categories nil           ;;将标签作为目录分类
          )))
+
 (provide 'init-org2blog)

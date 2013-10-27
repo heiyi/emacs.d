@@ -8,7 +8,6 @@
  make-backup-files nil
  auto-save-default nil         ;;don't save #file#
  column-number-mode t          ;;列号
- delete-selection-mode t       ;;Backspace删除选中文本
  indent-tabs-mode nil          ;;关闭Tab缩进
  size-indication-mode t        ;;显示文件大小
  show-trailing-whitespace t    ;;显示尾部空格，可以用delete-trailing-space删除
@@ -65,10 +64,6 @@
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-c C-<") 'mc/mark-all-like-this)
 
-;; Shift lines up and down with M-up and M-down.
-(require-package 'move-text)
-(move-text-default-bindings)
-
 ;; Handy key bindings
 (global-set-key (kbd "C-c j") 'join-line)
 (global-set-key (kbd "C-.") 'set-mark-command)
@@ -81,8 +76,7 @@
 
 ;; 分页符C-x[, C-x]跳转, C-q C-l插入分页符, C-x n w exit narrow
 (put 'narrow-to-region 'disabled nil)    ;;C-x n n
-;;----------------------------------------------------------------------------
-;; 跳转匹配括号  C-M-u
+;;----------------------跳转匹配括号  C-M-u------------------------------
 (defun backward-up-sexp (arg)
   "Jump up to the start of the ARG'th enclosing sexp."
   (interactive "p")
@@ -93,15 +87,5 @@
           ((backward-up-list arg)))))
 
 (global-set-key [remap backward-up-list] 'backward-up-sexp)
-
-;; C-M-<backspace>
-(defun kill-back-to-indentation ()
-  "Kill from point back to the first non-whitespace character on the line."
-  (interactive)
-  (let ((prev-pos (point)))
-    (back-to-indentation)
-    (kill-region (point) prev-pos)))
-
-(global-set-key (kbd "C-M-<backspace>") 'kill-back-to-indentation)
 
 (provide 'init-editing-utils)
