@@ -12,6 +12,6 @@
 
 (require 'init-editing-utils)	  ;; C->, C-c C-<,  M-m, C-c j, C-;
 
-(require 'init-ruby-mode)         ;; CSS && PHP
+(require 'init-program)
 (require 'init-org2blog)
 ;;---------------------------------END------------------------------------
