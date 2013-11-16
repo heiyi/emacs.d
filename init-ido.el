@@ -13,7 +13,7 @@
 
 ;; Smex
 (require-package 'smex)
-(global-set-key (kbd "M-x") 'smex)
+(global-set-key [remap execute-extended-command] 'smex)
 
 ;; Hippie expand
 (global-set-key (kbd "M-/") 'hippie-expand)
