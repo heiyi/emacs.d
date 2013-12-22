@@ -34,6 +34,18 @@
 ;;----------------------------------------------------------------------------
 (cua-selection-mode t)
 
+;; C-h v yas-snippet-dirs
+(require-package 'yasnippet)
+(yas-global-mode 1)
+(setq yas-prompt-functions '(yas-ido-prompt
+                             yas-completing-prompt))
+
+(require-package 'god-mode)
+(require 'god-mode)
+(global-set-key (kbd "<escape>") 'god-local-mode)
+(define-key god-local-mode-map (kbd "z") 'repeat)
+(define-key god-local-mode-map (kbd "i") 'god-local-mode)
+
 (require-package 'expand-region)
 (global-set-key (kbd "C-=") 'er/expand-region)
 
