@@ -5,8 +5,9 @@
 (setq inhibit-startup-screen t)
 
 ;; UI
-(dolist (mode '(menu-bar-mode tool-bar-mode scroll-bar-mode))
-  (when (fboundp mode) (funcall mode -1)))
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
 
 ;; Show a marker in the left fringe for lines not in the buffer
 (set-default 'indicate-empty-lines t)
