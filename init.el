@@ -1,5 +1,5 @@
 ;; reference purcell's emacs configuration
-(add-to-list 'load-path "~/.emacs.d/")
+(add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 
 ;; Machinery for installing required
 (require 'init-elpa)
