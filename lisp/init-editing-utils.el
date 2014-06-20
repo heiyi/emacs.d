@@ -11,8 +11,6 @@
  ediff-window-setup-function 'ediff-setup-windows-plain
  visible-bell t)
 
-(blink-cursor-mode 0)
-
 (fset 'yes-or-no-p 'y-or-n-p)
 
 (setq ispell-dictionary "american")
