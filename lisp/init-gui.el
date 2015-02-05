@@ -1,5 +1,5 @@
 ;; Theme
-(load-theme 'wombat 1)
+(load-theme 'tango-dark 1)
 
 ;; Close startup screen
 (setq inhibit-startup-screen t)
