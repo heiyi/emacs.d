@@ -1,7 +1,7 @@
 (require 'package)
 
 ;; Use Melpa for most packages
-(add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/"))
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 (package-initialize)
 
 ;; Installation of packages
