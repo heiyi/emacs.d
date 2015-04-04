@@ -13,7 +13,7 @@
 
 ;; Title
 (setq frame-title-format
-      '("o.O?   ▂ξ   " (:eval (if (buffer-file-name)
+      '((:eval (if (buffer-file-name)
                    (abbreviate-file-name (buffer-file-name))
                  "%b"))))
 
