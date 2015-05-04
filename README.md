@@ -1,3 +1,3 @@
-add this to ~/.bashrc or ~/.profile
-===
-setxkbmap -layout us -option ctrl:nocaps
+*** edit this to /etc/default/keyboard
+XKBOPTIONS="ctrl:nocaps"
+sudo dpkg-reconfigure keyboard-configuration
